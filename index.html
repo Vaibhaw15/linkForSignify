@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download Signify App</title>
+  <script>
+    const playStore = "https://play.google.com/store/apps/details?id=com.assistive.signify_loyalty&hl=en_IN";
+    const appStore = "https://apps.apple.com/in/app/signify-star-rewards-program/id6457250638";
+
+    if (/android/i.test(navigator.userAgent)) {
+      window.location.href = playStore;
+    } 
+    else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      window.location.href = appStore;
+    } 
+    else {
+      document.write("Please open this link on your mobile phone to download the app.");
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
